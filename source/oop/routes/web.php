@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 Route::get('/users', [\App\Http\Controllers\UserController::class, 'index']);
 Route::get('/users/factory', [\App\Http\Controllers\UserController::class, 'indexFactory']);
+Route::get('/users/abstractFactory', [\App\Http\Controllers\UserController::class, 'abstractFactory']);

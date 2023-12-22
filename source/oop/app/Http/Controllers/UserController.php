@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\Application;
 use App\Services\Notify;
 use App\Services\SocialPosting;
 use App\Services\WoodenDoor;
-use App\Services\DevManager;
+use App\Services\DevManager1;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -30,10 +31,16 @@ class UserController extends Controller
         // $this->socialPosting->post();
     }
 
-    public function indexFactory(DevManager $door)
+    public function indexFactory(DevManager1 $door)
     {
         dd($door);
     }
+
+    public function abstractFactory(Application $application)
+    {
+        dd($application);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
